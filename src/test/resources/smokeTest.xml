@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TTAF - SmokeTest - Cross Browser Testing in Parallel" parallel="tests" verbose="1"
+       configfailurepolicy="continue"
+       thread-count="5">
+
+    <test name="SmokeTest - Windows Chrome Browser">
+            <class name="runner.BrowserCompRunnerIT"/>
+        </classes>
+    </test>
+
+    <test name="SmokeTest - Windows Firefox Browser">
+              <classes>
+            <class name="runner.BrowserCompRunnerIT"/>
+        </classes>
+    </test>
+</suite>
