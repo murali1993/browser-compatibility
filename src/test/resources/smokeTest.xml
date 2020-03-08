@@ -15,4 +15,5 @@
             <class name="runner.BrowserCompRunnerIT"/>
         </classes>
     </test>
+
 </suite>
